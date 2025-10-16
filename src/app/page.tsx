@@ -96,7 +96,7 @@ export default function Home() {
 
       </main>
       <footer className="py-8 text-center">
-        <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Jackson Girls Corporation.</p>
+        <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Jackson Girls Corporation. Todos os direitos reservados.</p>
       </footer>
     </div>
   );
