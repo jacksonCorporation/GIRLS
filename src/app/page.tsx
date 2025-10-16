@@ -9,7 +9,7 @@ export default function Home() {
     <div className="bg-background min-h-screen text-foreground overflow-x-hidden">
       <main className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-headline text-5xl md:text-7xl font-bold tracking-wider text-primary-foreground/90 animate-pulse">
+          <h1 className="font-headline text-5xl md:text-7xl font-bold tracking-wider text-destructive/90 pulse-text-glow">
             𝖩𝖺𝖼𝗄𝗌𝗈𝗇 𝖦𝗂𝗋𝗅𝗌 𝖢𝗈𝗋𝗉𝗈𝗋𝖺𝗍𝗂𝗈𝗇
           </h1>
         </div>
@@ -77,7 +77,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 max-w-6xl mx-auto">
             {partnerships.map((partner, index) => (
-              <Card key={index} className="bg-card/70 border-border/50 shadow-lg hover:border-accent/70 hover:shadow-accent/10 transition-all duration-300 group backdrop-blur-sm flex flex-col pulse-glow" style={{ animationDelay: `${index * 0.1}s` }}>
+              <Card key={index} className="bg-primary/30 border-border/50 shadow-lg hover:border-accent/70 hover:shadow-accent/10 transition-all duration-300 group backdrop-blur-sm flex flex-col pulse-glow" style={{ animationDelay: `${index * 0.1}s` }}>
                 <CardHeader className="flex-grow">
                   <CardTitle className="font-body text-xl text-foreground/90">{partner.name}</CardTitle>
                 </CardHeader>
