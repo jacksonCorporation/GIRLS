@@ -5,6 +5,14 @@ export const admins = [
   "⤿ Docks 𝖩𝖺𝖼𝗄𝗌𝗈𝗇",
 ];
 
+export const forbiddenRules = [
+  "Gore",
+  "Pornografia",
+  "Links de grupos não autorizados",
+  "CP",
+  "Explanação",
+];
+
 type Partnership = {
   name: string;
   url: string;

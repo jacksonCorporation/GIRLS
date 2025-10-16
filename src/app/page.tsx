@@ -1,8 +1,8 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { admins, partnerships } from '@/lib/data';
-import { Users, BookOpen, Mic, ArrowRight } from 'lucide-react';
+import { admins, partnerships, forbiddenRules } from '@/lib/data';
+import { Users, BookOpen, Mic, ArrowRight, ShieldBan } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
           </h1>
         </div>
 
-        <div className="mt-20 grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
+        <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
           <Card className="bg-card/70 border-border/50 shadow-xl backdrop-blur-sm fade-in fade-in-delay-1 opacity-0">
             <CardHeader>
               <CardTitle className="flex items-center gap-3 font-headline text-2xl text-accent">
@@ -45,6 +45,24 @@ export default function Home() {
               <p className="text-lg font-body text-foreground/80">
                 Mandar áudio para confirmar ser menina!
               </p>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-card/70 border-border/50 shadow-xl backdrop-blur-sm fade-in fade-in-delay-3 opacity-0 md:col-span-2 lg:col-span-1">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-3 font-headline text-2xl text-destructive">
+                <ShieldBan className="h-6 w-6" />
+                <span>Regras Proibidas</span>
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-3">
+                {forbiddenRules.map((rule, index) => (
+                  <li key={index} className="text-lg font-body text-foreground/80">
+                    ⤿ {rule}
+                  </li>
+                ))}
+              </ul>
             </CardContent>
           </Card>
         </div>
