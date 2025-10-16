@@ -52,7 +52,7 @@ export default function Home() {
             <CardHeader>
               <CardTitle className="flex items-center gap-3 font-headline text-2xl text-destructive">
                 <ShieldBan className="h-6 w-6" />
-                <span>Regras Proibidas</span>
+                <span>Proibido</span>
               </CardTitle>
             </CardHeader>
             <CardContent>
